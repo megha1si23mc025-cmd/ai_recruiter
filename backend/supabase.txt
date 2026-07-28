@@ -1,0 +1,3 @@
+password = 27Megha@Cap
+project name = hiregenie-ai
+anon_public= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJseHdpb2lndXJ6amlkeGh5a3NhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2NzIyMTgsImV4cCI6MjA5NzI0ODIxOH0.lrGTQ0YTvLRGmRWC8zZbZZEfPti9VNARjGKvspIqTOs
