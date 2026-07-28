@@ -1,0 +1,113 @@
+Project Title: HireGenie AI – Agentic Recruitment Automation System
+
+Objective:
+Build an AI-powered recruitment system using an agentic architecture that automates the hiring process from job posting to interview scheduling. The system should have a clean, modern UI and use Supabase as the backend database.
+
+Core Requirements:
+1. Use an Agentic Multi-Agent System
+2. Integrate Supabase (PostgreSQL) as database
+3. Use free AI APIs like Gemini / NVIDIA NIM
+4. Ensure all APIs and services are HTTPS (SSL-safe)
+5. Build an intuitive, recruiter-friendly UI
+6. Include clear documentation (README + ARCHITECTURE)
+
+Agents to Implement:
+1. Job Description Agent
+   - Takes job title → generates full job description
+
+2. Resume Screening Agent
+   - Accepts resume text (PDF optional)
+   - Extracts skills, experience, keywords
+
+3. Matching Agent
+   - Compares resume vs job description
+   - Outputs match score + explanation
+
+4. Ranking Agent
+   - Ranks candidates based on score
+
+5. Interview Scheduling Agent
+   - Suggests available interview slots
+
+6. Notification Agent
+   - Generates email content (no real email sending needed)
+
+System Features:
+
+Frontend UI Pages:
+1. Dashboard
+   - Overview of jobs + candidates
+
+2. Job Creation Page
+   - Input job title
+   - Auto-generate job description (AI)
+
+3. Candidate Upload Page
+   - Upload resume OR paste text
+
+4. Candidate Analysis Page
+   - Show:
+     - Extracted skills
+     - Match score
+     - Ranking
+
+5. Interview Scheduling Page
+   - Show suggested slots
+
+6. Candidate Pipeline View
+   - Kanban style (Applied → Shortlisted → Interview → Hired)
+
+Backend:
+- Use FastAPI or Node.js
+- Implement agent orchestration
+- Connect to Supabase database
+
+Database (Supabase Schema):
+Tables to include:
+1. jobs
+   - id, title, description, requirements
+
+2. candidates
+   - id, name, email, resume_text
+
+3. applications
+   - job_id, candidate_id, score, status
+
+4. interviews
+   - candidate_id, scheduled_time, status
+
+Integrations:
+- Gemini API (for AI reasoning)
+- Tavily / LangSearch (optional candidate sourcing)
+- Supabase (database + storage)
+
+UI Requirements:
+- Modern design using Tailwind CSS
+- Cards, dashboards, clean layout
+- Recruiter-focused usability
+- Responsive design
+
+Architecture:
+- Frontend → Backend API → Agent System → Supabase DB
+- Modular agent design
+- Clear separation of concerns
+
+Deliverables:
+1. Working UI
+2. Agent-based backend logic
+3. Supabase integration
+4. README.md
+5. ARCHITECTURE.md
+
+Bonus Features:
+- Explain why a candidate is selected (AI explanation)
+- Resume vs JD similarity visualization
+- Smart ranking insights
+
+Constraints:
+- Must run fully on HTTPS-enabled services
+- No local insecure APIs
+- Compatible with corporate laptop restrictions
+
+Output Expectation:
+Generate a complete working prototype with frontend, backend, and agent orchestration logic.
